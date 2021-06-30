@@ -1,57 +1,18 @@
-## Live Streaming and Face Detection with Flask
+## Smart and Context-Aware System employing Emotions Recognition
+Work Submitted in IEEE-INCET 2021 Conference 
+- [Link for Paper - IEEE-Xplore](https://ieeexplore.ieee.org/abstract/document/9456356)
+- [Link for Paper - Arxiv](https://arxiv.org/abs/2106.15101)
+### Abstract
+People have the ability to make sensible assumptions about other people's emotional states by being sympathetic, and because of our common sense of knowledge and the ability to think visually. Over the years, much research has been done on providing machines with the ability to detect human emotions and to develop automated emotional intelligence systems. The computer's ability to detect human emotions is gaining popularity in creating sensitive systems such as learning environments, health care systems and real-world. Improving people's health has been the subject of much research. This paper describes the formation as conceptual evidence of emotional acquisition and control in intelligent health settings. The authors of this paper aim for an unconventional approach with a friendly look to get emotional scenarios from the system to establish a functional, non-intrusive and emotionally-sensitive environment where users can do their normal activities naturally and see the program only when pleasant mood activating services are received. The context-sensitive system interacts with users to detect and differentiate emotions through facial expressions or speech recognition, to make music recommendations and mood color treatments with the services installed on their IoT devices.
 
+
+
+### Run Server
 ```python
 pip install -r requirements.txt
 ```
-
-### Run Server
 
 ```python
 python app.py
 ```
 
-### Use Built-in Webcam of Laptop
-- Put Zero (O) in cv2.VideoCapture(0)
-```python
-cv2.VideoCapture(0)
-```
-
-#### Use Ip Camera/CCTV/RTSP Link
-
-```python
-cv2.VideoCapture('rtsp://username:password@camera_ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp')
-```
-
-#### Example RTSP Link
-
-```python
-cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=0_stream=0.sdp')
-```
-
-#### Change Channel Number to Change the Camera
-
-```python
-cv2.VideoCapture('rtsp://mamun:123456@101.134.16.117:554/user=mamun_password=123456_channel=1_stream=0.sdp')
-```
-
-#### Display the resulting frame in browser
-
-```python
-cv2.imencode('.jpg', frame)[1].tobytes()
-```
-
-#### Display the resulting frame in window
-
-#### Instead of return use this in [camera.py](/camera.py)
-
-```python
-cv2.imshow('frame', frame)
-if cv2.waitKey(1) & 0xFF == ord('q'):
-       break
-```
-
-### Learn More
-
-Learn More about Streaming with flask
-
-- https://blog.miguelgrinberg.com/post/video-streaming-with-flask
