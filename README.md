@@ -1,5 +1,5 @@
 ## Smart and Context-Aware System employing Emotions Recognition
-Work Submitted in IEEE-INCET 2021 Conference 
+Work Submitted and Published in IEEE-INCET 2021 Conference 
 - [Link for Paper - IEEE-Xplore](https://ieeexplore.ieee.org/abstract/document/9456356)
 - [Link for Paper - Arxiv](https://arxiv.org/abs/2106.15101)
 ### Abstract
